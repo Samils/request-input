@@ -1,7 +1,7 @@
 {
 	"name": "php_modules/request-input",
 	"version": "1.0",
-	"description": "HTTP Request input/body parser for.",
+	"description": "HTTP Request input/body parser for php rest API.",
   "type": "library",
 	"license": "MIT",
   "minimum-stability": "dev",
