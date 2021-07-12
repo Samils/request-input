@@ -1,0 +1,7 @@
+# PHP File Moduler
+
+include-all:
+  core:
+    ...includeAll core scripts
+  examples:
+    ...Examples

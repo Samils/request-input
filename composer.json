@@ -1,0 +1,52 @@
+{
+	"name": "php_modules/request-input",
+	"version": "1.0",
+	"description": "HTTP Request input/body parser for.",
+  "type": "library",
+	"license": "MIT",
+  "minimum-stability": "dev",
+	"keywords": [
+		"http",
+    "input",
+    "http-body",
+    "body-parser",
+    "request-input-parser",
+    "request-body-parser",
+    "input-parser",
+    "http-request-body",
+    "http-request-body-parser",
+    "http-request-input",
+    "http-request-input-parser"
+	],
+	"autoload": {
+		"psr-4": { "Sammy\\": "Sammy/" },
+		"psr-0": { "Sammy\\": "Sammy/" },
+		"classmap": [
+      "Sammy/"
+		],
+		"files": [
+			"autoload.php"
+		]
+	},
+  "homepage": "https://github.com/samils/request-input",
+  "readme": "./README.md",
+  "authors": [
+    {
+      "name": "Agostinho Lopes",
+      "email": "agostinhosaml832@gmail.com",
+      "homepage": "https://agostinhosamil.github.io",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "base.samils@gmail.com",
+    "issues": "https://github.com/samils/request-input/issues",
+    "wiki": "https://github.com/samils/request-input/wiki"
+  },
+	"require": {
+		"php": ">=5.6.20",
+		"php_modules/core": "^1.0.2",
+    "php_modules/yaml-lite": "^1.0.5",
+    "php_modules/xm1rray": "^1.0.*"
+	}
+}
