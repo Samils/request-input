@@ -19,7 +19,7 @@ composer require php_modules/request-input
 ```json
 {
   "require": {
-    "php_modules/request-input": "^1.0.*"
+    "php_modules/request-input": "^1.0.1"
   }
 }
 ```
