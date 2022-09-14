@@ -39,22 +39,5 @@ namespace Sammy\Packs\RequestInput {
    * when trying to run the current command by the cli
    * API.
    */
-  if (!class_exists('Sammy\Packs\RequestInput\Base')){
-  /**
-   * @class Base
-   * Base internal class for the
-   * RequestInput module.
-   * -
-   * This is (in the ils environment)
-   * an instance of the php module,
-   * wich should contain the module
-   * core functionalities that should
-   * be extended.
-   * -
-   * For extending the module, just create
-   * an 'exts' directory in the module directory
-   * and boot it by using the ils directory boot.
-   * -
-   */
   $module->exports = new Base;
 }
