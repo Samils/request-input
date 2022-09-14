@@ -66,7 +66,7 @@ namespace Sammy\Packs\RequestInput {
      */
     public final function getRequestInput () {
 
-      $headers = getallheaders();
+      $headers = self::getHeaders ();
 
       $contentTypesRe = '/^((text|application)\/(.+))/i';
       $contentType = 'text/json';
@@ -149,6 +149,14 @@ namespace Sammy\Packs\RequestInput {
         [new static, 'getRequestInput'],
         func_get_args ()
       );
+    }
+
+    protected static function getHeaders () {
+      if (function_exists ('getallheaders')) {
+        return getallheaders ();
+      }
+
+      return [];
     }
   }}
 }
