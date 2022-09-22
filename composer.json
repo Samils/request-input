@@ -19,11 +19,12 @@
     "http-request-input-parser"
 	],
 	"autoload": {
-		"psr-4": { "Sammy\\": "Sammy/" },
-		"psr-0": { "Sammy\\": "Sammy/" },
-		"classmap": [
-      "Sammy/"
-		],
+		"psr-4": {
+      "Sammy\\": "Sammy/"
+    },
+		"psr-0": {
+      "Sammy\\": "Sammy/"
+    },
 		"files": [
 			"autoload.php"
 		]
@@ -44,9 +45,10 @@
     "wiki": "https://github.com/samils/request-input/wiki"
   },
 	"require": {
-		"php": ">=5.6.20",
-		"php_modules/core": "dev-main",
+		"php": ">=5.6.20"
+	},
+  "suggest": {
     "php_modules/yaml-lite": "dev-main",
     "php_modules/xm1rray": "dev-main"
-	}
+  }
 }
