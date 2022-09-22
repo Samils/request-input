@@ -64,7 +64,7 @@ namespace Sammy\Packs\RequestInput {
      * content type from the request.
      * @return array
      */
-    public final function getRequestInput () {
+    public function getRequestInput () {
 
       $headers = self::getHeaders ();
 
@@ -89,7 +89,7 @@ namespace Sammy\Packs\RequestInput {
       return [];
     }
 
-    protected final function parseJson ( $phpRawInput ) {
+    protected function parseJson ( $phpRawInput ) {
       $jsonData = self::jsonObject2Array (
         json_decode ( $phpRawInput )
       );
@@ -99,7 +99,7 @@ namespace Sammy\Packs\RequestInput {
       );
     }
 
-    protected final function parseYaml ( $phpRawInput ) {
+    protected function parseYaml ( $phpRawInput ) {
       $yamlLite = requires ('yaml-lite');
 
       if ( !$yamlLite ) return array ();
@@ -111,7 +111,7 @@ namespace Sammy\Packs\RequestInput {
       return !is_array ($yamlData) ? [] : $yamlData;
     }
 
-    protected final function parseXml ( $phpRawInput ) {
+    protected function parseXml ( $phpRawInput ) {
       $xm1rray = requires ('xm1rray');
 
       return self::jsonObject2Array (
@@ -119,7 +119,7 @@ namespace Sammy\Packs\RequestInput {
       );
     }
 
-    protected final function getPhpRawInput () {
+    protected function getPhpRawInput () {
       return !function_exists('file_get_contents') ? null : (
         call_user_func_array('file_get_contents', array (
           'php://input'
